@@ -14,4 +14,4 @@ ax.set_ylabel('Fibonacci Number F(n)', fontsize=15)
 
 ax.tick_params(labelsize=14)
 
-plt.show()
+plt.savefig('output.png', bbox_inches = 'tight')

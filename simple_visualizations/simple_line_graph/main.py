@@ -6,4 +6,4 @@ fig, ax = plt.subplots()
 
 ax.plot(fibbonacci_sequence)
 
-plt.show()
+plt.savefig('output.png', bbox_inches = 'tight')
