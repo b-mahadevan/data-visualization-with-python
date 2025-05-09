@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./rolling_single_die"
+    ]
+}
