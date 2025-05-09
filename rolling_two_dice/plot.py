@@ -1,3 +1,9 @@
+import sys
+import os
+import plotly.express as px
+
+sys.path.append(os.path.abspath("D:/python/data_visualization_with_python/rolling_single_die"))
+
 from die import Die
 
 die1 = Die()
