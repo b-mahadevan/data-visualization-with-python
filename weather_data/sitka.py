@@ -1,8 +1,9 @@
 from pathlib import Path
 import csv
 from datetime import datetime
+import matplotlib.pyplot as plt
 
-path = Path('D:\python\data_visualization_with_python\weather_data\sitka_weather_07-2021_simple.csv')
+path = Path('D:\python\data_visualization_with_python\weather_data\sitka_weather_2021_simple.csv')
 
 #Print the header row
 lines = path.read_text().splitlines()
@@ -61,3 +62,45 @@ for row in reader:
 
 print("\nMinimum Temperatures:")
 print(tmin)
+
+year_month = [date.strftime("%Y-%m") for date in dates]
+
+#Plot for high temperaturs
+plt.style.use('seaborn-v0_8')
+fig, ax = plt.subplots(figsize=(10, 7))
+ax.plot(dates, tmax, color='red')
+
+ax.set_title("Daily High Temperature, July-2021", fontsize=25)
+ax.set_xlabel('Day', fontsize=15)
+ax.set_ylabel('Temperature', fontsize=15)
+fig.autofmt_xdate()
+ax.tick_params(labelsize=16)
+
+plt.savefig('output1.png', bbox_inches = 'tight')
+
+#Plot for high temperaturs
+plt.style.use('seaborn-v0_8')
+fig, ax = plt.subplots(figsize=(10, 7))
+ax.plot(dates, tmin, color='blue')
+
+ax.set_title("Daily Low Temperature, July-2021", fontsize=25)
+ax.set_xlabel('Day', fontsize=15)
+ax.set_ylabel('Temperature', fontsize=15)
+fig.autofmt_xdate()
+ax.tick_params(labelsize=16)
+
+plt.savefig('output2.png', bbox_inches = 'tight')
+
+#Plotting both
+plt.style.use('seaborn-v0_8')
+fig, ax = plt.subplots(figsize=(10, 7))
+ax.plot(dates, tmax, color='red')
+ax.plot(dates, tmin, color='blue')
+
+ax.set_title("Daily High and Low Temperature, July-2021", fontsize=25)
+ax.set_xlabel('Day', fontsize=15)
+ax.set_ylabel('Temperature', fontsize=15)
+fig.autofmt_xdate()
+ax.tick_params(labelsize=16)
+
+plt.savefig('output3.png', bbox_inches = 'tight')
