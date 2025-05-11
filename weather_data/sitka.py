@@ -96,6 +96,7 @@ plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots(figsize=(10, 7))
 ax.plot(dates, tmax, color='red')
 ax.plot(dates, tmin, color='blue')
+ax.fill_between(dates, tmax, tmin, facecolor = 'blue', alpha = 0.1)
 
 ax.set_title("Daily High and Low Temperature, July-2021", fontsize=25)
 ax.set_xlabel('Day', fontsize=15)
