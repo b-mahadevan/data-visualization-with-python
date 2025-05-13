@@ -1,4 +1,4 @@
-# Visualizing Data in Python using Matplotlib and Plotly
+# Visualizing Data with Python using Matplotlib and Plotly
 
 This project demonstrates how to use Python's powerful visualization libraries—**Matplotlib** and **Plotly**—to explore and present various types of data. It includes hands-on examples such as plotting random walks, visualizing dice roll simulations, analyzing real-world weather data, and mapping recent earthquakes using GeoJSON data.
 
