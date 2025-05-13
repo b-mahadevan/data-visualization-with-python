@@ -2,25 +2,6 @@
 
 This project demonstrates how to use Python's powerful visualization libraries—**Matplotlib** and **Plotly**—to explore and present various types of data. It includes hands-on examples such as plotting random walks, visualizing dice roll simulations, analyzing real-world weather data, and mapping recent earthquakes using GeoJSON data.
 
-## 📌 Table of Contents
-- [Overview](#overview)
-- [Technologies Used](#technologies-used)
-- [Projects and Datasets](#projects-and-datasets)
-- [Screenshots](#screenshots)
-- [Future Work](#future-work)
-
----
-
-## 📖 Overview
-
-In this project, you will learn how to:
-- Create static and interactive plots using Matplotlib and Plotly.
-- Read and analyze CSV and JSON files.
-- Visualize real-world weather data.
-- Simulate and visualize dice roll outcomes.
-- Generate and plot random walk data.
-- Create interactive world maps to visualize earthquake data.
-
 ---
 
 ## 🛠 Technologies Used
@@ -34,7 +15,7 @@ In this project, you will learn how to:
 
 ---
 
-## 📊 Projects and Datasets
+## 📊 Visualizing Data with Python
 
 ### 1. **Plotting a Simple Line Graph**
 
@@ -72,8 +53,8 @@ In this project, you will learn how to:
 ---
 
 📷 Screenshots
-![image](https://github.com/user-attachments/assets/5df25d71-8b83-4791-a0d7-73e111fa863b)
-![image](https://github.com/user-attachments/assets/4a07982a-3967-440f-ab1c-00774d90b512)
+- https://github.com/b-mahadevan/visualizing_data_with_python/blob/main/weather_data/output3.png
+- https://github.com/b-mahadevan/visualizing_data_with_python/blob/main/earthquake_data/eq_data_30_day/output.png
 
 ---
 
